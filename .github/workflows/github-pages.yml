@@ -20,7 +20,7 @@ jobs:
           node-version: '18'
       - run: npm install
       - name: Build site
-        uses: limjh16/jekyll-action-ts
+        uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
       - name: Deploy
