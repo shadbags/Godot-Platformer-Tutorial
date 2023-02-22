@@ -9,7 +9,7 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1
@@ -20,7 +20,7 @@ jobs:
           node-version: '18'
       - run: npm install
       - name: Build site
-        uses: limjh16/jekyll-action-ts@v2
+        uses: limjh16/jekyll-action-ts@v3
         with:
           enable_cache: true
       - name: Deploy
