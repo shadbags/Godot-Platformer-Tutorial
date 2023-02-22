@@ -15,12 +15,12 @@ jobs:
           ruby-version: 3.1
           bundler-cache: true
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
       - run: npm install
       - name: Build site
-        uses: limjh16/jekyll-action-ts@v2
+        uses: limjh16/jekyll-action-ts@v3
         with:
           enable_cache: true
       - name: Deploy
