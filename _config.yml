@@ -1,5 +1,5 @@
-url: ''
-baseurl: ''
+url: 'https://shadbags.github.io'
+baseurl: 'Godot-Platformer-Tutorial'
 title: 'Jekyllwind'
 
 plugins:
